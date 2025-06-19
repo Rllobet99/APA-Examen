@@ -96,7 +96,7 @@ app.geometry("640x480")
 notebook = ttk.Notebook(app)
 notebook.pack(fill="both", expand=True)
 
-# ========== Pestanya 1: Estèreo a Mono ==========
+# Pestanya 1: Estèreo a Mono
 frame1 = ttk.Frame(notebook)
 notebook.add(frame1, text="Estèreo a Mono")
 
@@ -116,7 +116,7 @@ ttk.Button(frame1, text="Desa com...", command=lambda: sortida_path.set(filedial
 ttk.Button(frame1, text="Convertir", command=lambda: stereo_to_mono(entrada_path.get(), sortida_path.get()), bootstyle="success").pack(pady=10)
 ttk.Button(frame1, text="Escoltar sortida", command=lambda: playsound(sortida_path.get()), bootstyle="info").pack()
 
-# ========== Pestanya 2: Mono a Estèreo ==========
+#Pestanya 2: Mono a Estèreo 
 frame2 = ttk.Frame(notebook)
 notebook.add(frame2, text="Mono a Estèreo")
 
@@ -135,7 +135,7 @@ ttk.Button(frame2, text="Desa com...", command=lambda: estereo_out_path.set(file
 ttk.Button(frame2, text="Convertir", command=lambda: mono_to_stereo(mono_path.get(), estereo_out_path.get()), bootstyle="success").pack(pady=10)
 ttk.Button(frame2, text="Escoltar sortida", command=lambda: playsound(estereo_out_path.get()), bootstyle="info").pack()
 
-# ========== Pestanya 3: Codifica Estèreo ==========
+#Pestanya 3: Codifica Estèreo 
 frame3 = ttk.Frame(notebook)
 notebook.add(frame3, text="Codifica Estèreo")
 
@@ -160,7 +160,7 @@ ttk.Button(frame3, text="Desa com...", command=lambda: estereo_path.set(filedial
 ttk.Button(frame3, text="Codificar", command=lambda: codifica_estereo(mono1_path.get(), mono2_path.get(), estereo_path.get()), bootstyle="success").pack(pady=10)
 ttk.Button(frame3, text="Escoltar sortida", command=lambda: playsound(estereo_path.get()), bootstyle="info").pack()
 
-# ========== Pestanya 4: Descodifica Estèreo ==========
+#Pestanya 4: Descodifica Estèreo 
 frame4 = ttk.Frame(notebook)
 notebook.add(frame4, text="Descodifica Estèreo")
 
